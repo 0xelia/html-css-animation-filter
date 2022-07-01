@@ -49,10 +49,15 @@
 }
 .ex-10-icon {
     font-size: 60px;
+    animation: rotate 1s infinite linear;
 }
 .ex-11-icon {
     font-size: 60px;
+    
 }
+
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -131,13 +136,90 @@ background-color: red;
     filter: grayscale(60%) sepia(20%);
 }
 
+/* EX 8 */
+
 .ex-8-img:hover {
     filter: grayscale(60%) sepia(20%);
     border-radius: 20px;
 }
 
+/* EX 9 */
+
 .ex-9-img:hover {
     filter: grayscale(60%) sepia(20%);
     border-radius: 20px;
     transform: scale(1.5);
+}
+
+/* EX 11 */
+
+.ex-11-icon:hover {
+    animation: rotate-75 2s linear;
+}
+
+/* EX 12 */
+
+.ex-12-button:hover  .ex-12-top-white {
+    animation: top-translate 2s linear ;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: bottom-translate 2s linear;
+}
+
+/* ANIMATIONS */
+
+@keyframes rotate {
+    from {
+        ransform: rotate(0deg);
+    }
+
+
+    to {
+        transform: rotate(-360deg);
+    }
+ }
+
+
+ @keyframes rotate-75 {
+     from {
+        transform: rotate(0deg);
+     }
+
+     80% {
+         transform: rotate(270deg);
+     }
+
+     to {
+         transform: rotate(0deg);
+     }
+ }
+
+
+@keyframes top-translate {
+    from {
+        left: 10%
+    }
+
+    50% {
+        left: 65%
+    }
+
+    to {
+        left: 10%
+    }
+}
+
+@keyframes bottom-translate {
+    from {
+        right: 20%
+    }
+
+    50% {
+        right: 65%
+    }
+
+    to {
+        right: 20%
+    }
 }
