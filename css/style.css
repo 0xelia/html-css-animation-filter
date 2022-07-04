@@ -212,7 +212,8 @@ background-color: red;
     }
 
     50% {
-        left: 65%
+        left: 90%;
+        transform: translateX(-100%);
     }
 
     to {
@@ -240,18 +241,18 @@ background-color: red;
         left: 10%
     }
 
-    30% {
+    27% {
         top: -10px;
         left: 90%;
     }
 
-    50% {
+    40% {
 
         left: 90%;
         top: 50px;
     }
 
-    75% {
+    77% {
         top: 50px;
         left: -5%;
     }
@@ -273,17 +274,17 @@ background-color: red;
         right: 20%;
     }
 
-    25% {
+    27% {
         bottom: -10px;
         right: 80%;
     }
 
-    50% {
+    40% {
         right: 80%;
         bottom: 50px;
     }
 
-    75% {
+    77% {
         bottom: 50px;
         right: -5%;
     }
