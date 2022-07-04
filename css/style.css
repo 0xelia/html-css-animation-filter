@@ -256,9 +256,14 @@ background-color: red;
         left: -5%;
     }
 
-    100% {
+    90% {
         left: -5%;
         top: -10px;
+    }
+
+    100% {
+        left: 10%;
+        top: -10%;
     }
 }
 
